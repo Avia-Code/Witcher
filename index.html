@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="canonical" href="https://{avia-code.github.io}.github.io/{Witcher}/" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<title>The Witcher</title>
 </head>
@@ -158,6 +159,14 @@
 
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>
+    <script>
+        // register ServiceWorker, remember to use absolute path!
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/{Witcher}/sw.js', { scope: '/{Witcher}/' })
+        }
+
+      // --- Application code here ---
+    </script>
     <script>
         function asyncCSS(href) {
                 var css = document.createElement('link');
