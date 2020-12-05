@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
 	<title>The Witcher</title>
 </head>
 
@@ -158,7 +157,16 @@
 	</div>
 
 	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/script.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+        function asyncCSS(href) {
+                var css = document.createElement('link');
+                css.rel = "stylesheet";
+                css.href = href;
+                document.head.appendChild(css);
+            }
+            asyncCSS('css/style.min.css');
+    </script>
 </body>
 
 </html>
